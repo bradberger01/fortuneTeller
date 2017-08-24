@@ -1,1 +1,6 @@
 c:\users\wecancodeit\documents\visual studio 2015\Projects\fortuneTeller\fortuneTeller\bin\Debug\fortuneTeller.exe.config
+c:\users\wecancodeit\documents\visual studio 2015\Projects\fortuneTeller\fortuneTeller\obj\Debug\fortuneTeller.csprojResolveAssemblyReference.cache
+c:\users\wecancodeit\documents\visual studio 2015\Projects\fortuneTeller\fortuneTeller\bin\Debug\fortuneTeller.exe
+c:\users\wecancodeit\documents\visual studio 2015\Projects\fortuneTeller\fortuneTeller\bin\Debug\fortuneTeller.pdb
+c:\users\wecancodeit\documents\visual studio 2015\Projects\fortuneTeller\fortuneTeller\obj\Debug\fortuneTeller.exe
+c:\users\wecancodeit\documents\visual studio 2015\Projects\fortuneTeller\fortuneTeller\obj\Debug\fortuneTeller.pdb
