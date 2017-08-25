@@ -30,7 +30,7 @@ namespace fortuneTeller
             Console.WriteLine("Using ROYGBIV, enter your favorite color. If you don't know ROYGBIV type in \r\n\"Help\"");
             string favColor = Console.ReadLine();
 
-            if (favColor == "help")
+            if (favColor == "help" || favColor == "help".ToLower() || favColor == "help".ToUpper())
             {
                 Console.WriteLine("Red\r\nOrange\r\nYellow\r\nGreen\r\nBlue\r\nIndigo\r\nViolet");
                 Console.WriteLine("So, now that you know, enter your favorite color.");
