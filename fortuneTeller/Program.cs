@@ -42,82 +42,101 @@ namespace fortuneTeller
             int numOfSibs = int.Parse(Console.ReadLine());
 
             //Giving meaning to all the information the user typed in
+            //age = number of years until retirement
 
+            int numOfYears = 0;
             if (age % 2 == 0)
             {
-                Console.WriteLine("You will retire in 20 years.");
+                numOfYears = numOfYears + 20;
             }
             else
             {
-                Console.WriteLine("You will retire in 30 years.");
+                numOfYears = numOfYears + 30;
             }
+
+            // number of siblings will = where you will retire
+
+            string location = null;
 
             if (numOfSibs == 0)
             {
-                Console.WriteLine("You will have a vacation home in Akron");
+               location = "Akron";
             }
             else if (numOfSibs == 1)
             {
-                Console.WriteLine("You will have a vacation home in Paris");
+               location ="Paris";
             }
             else if (numOfSibs == 2)
             {
-                Console.WriteLine("You will have a vacation home in the Bahamas");
+                location = "the Bahamas";
             }
             else if (numOfSibs >= 3)
             {
-                Console.WriteLine("You will have a vacation home in Spain");
+                location = "Spain";
             }
             else if(numOfSibs < 0)
             {
-                Console.WriteLine("you will have a vacation home in the North Pole");
+                location = "the North Pole";
             }
+
+            // favorite color with = what form of transportation you will have
+
+            string transportation = null;
 
             if(favColor =="red")
             {
-                Console.WriteLine("You have a sports car as you mode of transportation.");
+                transportation = "sports car";
             }
             else if(favColor == "orange")
             {
-                Console.WriteLine("You have a bike as your mode of transportation.");
+                transportation = "bicycle";
             }
             else if(favColor == "yellow")
             {
-                Console.WriteLine("You have a unicycle as your mode of transportation.");
+               transportation = "unicycle";
             }
             else if(favColor == "green")
             {
-                Console.WriteLine("You have a horse as your mode of transportation.");
+                transportation = "racing snail";
             }
             else if(favColor == "blue")
             {
-                Console.WriteLine("You have a motorcycle as your mode of transportation.");
+                transportation = "motorcycle";
             }
             else if(favColor == "indigo")
             {
-                Console.WriteLine("You have a dog sled as your mode of transportation.");
+                transportation = "dog sled";
             }
             else
             {
-                Console.WriteLine("You have a yaht as your mode of transportation.");
+                transportation = "segway";
             }
+
+            // birthmonth will = how much money you will have in the bank
+
+            string amountOfMoney = null;
 
             if (birthMonth >= 1 && birthMonth < 5 || birthMonth >= 01 && birthMonth < 05)
             {
-                Console.WriteLine("You will have $5,000 in the bank.");
+                amountOfMoney = "$5,000";
             }
             else if (birthMonth >=5  && birthMonth < 9 || birthMonth >= 05 && birthMonth < 09) 
             {
-                Console.WriteLine("You will have $10,000 in the bank.");
+               amountOfMoney = "$10,000";
             }
             else if(birthMonth >= 9 && birthMonth < 13 || birthMonth >= 09 && birthMonth < 13)
             {
-                Console.WriteLine("You will have $20,000 in the bank.");
+                amountOfMoney = "$20,000";
             }
             else
             {
-                Console.WriteLine("You will have $0.00 in the bank.");
+                amountOfMoney = "$0.00";
+                
             }
+
+            // Computer write out the follow response based on the user's information
+
+            Console.WriteLine(firstName + " " + lastName + " will retire in " + numOfYears + " with " + amountOfMoney + " in the bank, a vacation home in " + location + " and a " + transportation + ".");
         }
     }
 }
